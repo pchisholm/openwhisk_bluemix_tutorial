@@ -11,5 +11,5 @@ const server = http.createServer(app),
 	port = process.env.VCAP_APP_PORT || 8080;
 
 server.listen(port, () => {
-	console.log(`Node server started on port ${port}. Thanks for using my tutorial! ^_^`)
+	console.log(`Node server started on port ${port}. Thanks for using my tutorial! ^_^`);
 });
