@@ -1,7 +1,7 @@
 {
 	"tasks": [
 		"Add unit tests to the project.",
-		"Add a Bluemix service to the project.",
+		"Try creating a virtual python environment with an action.",
 		"Add Bluemix service credentials to a package.",
 		"Try out authentication systems with stateless.",
 		"Play with the wsk configuration parameters and flags.",
