@@ -1,0 +1,5 @@
+---
+applications:
+- name: openwhisk_tutorial
+  memory: 256M
+  command: node app.js

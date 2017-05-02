@@ -1,0 +1,28 @@
+{
+  "name": "openwhisk_bluemix_tutorial",
+  "version": "1.0.0",
+  "description": "Simple scaffold for an OpenWhisk / Bluemix web application ",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pchisholm/openwhisk_bluemix_tutorial.git"
+  },
+  "keywords": [
+    "openwhisk",
+    "bluemix",
+    "stateless"
+  ],
+  "author": "Patrick Chisholm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pchisholm/openwhisk_bluemix_tutorial/issues"
+  },
+  "homepage": "https://github.com/pchisholm/openwhisk_bluemix_tutorial#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "http": "0.0.0"
+  }
+}

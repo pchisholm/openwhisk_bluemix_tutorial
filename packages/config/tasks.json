@@ -1,0 +1,13 @@
+{
+	"tasks": [
+		"Add unit tests to the project.",
+		"Add a Bluemix service to the project.",
+		"Add Bluemix service credentials to a package.",
+		"Try out authentication systems with stateless.",
+		"Play with the wsk configuration parameters and flags.",
+		"Create a stateless user interface.",
+		"Try out parallelism by requiring the openwhisk native libs.",
+		"Add a swift package to the project.",
+		"Try creating a custom docker environment for a blackbox action."
+	]
+}

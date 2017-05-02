@@ -1,0 +1,12 @@
+.toolbar {
+	position: absolute; 
+	left: 10px; 
+	right: 170px; 
+	top: 18px; 
+	bottom: 13px;
+}
+
+.error-box {
+	text-align: center;
+	padding-top: 30px;
+}
