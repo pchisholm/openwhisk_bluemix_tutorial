@@ -32,7 +32,7 @@ If you are wondering why there is a NodeJS/Express server and CF app deployment 
 
 ### Simple Use Case
 
-I have a made up list of tasks, found in: `root/packages/config/tasks.json` and my core goal is to display this original task list and a random subset of 'daily tasks' via a web app. I want to provide an endpoint that responds with the task list data in NodeJS. I also want to create secondary endpoints that can sort the subset of tasks arbitrarily using python.
+I have a made up list of tasks, found in: `root/packages/config/tasks.json` and my core goal is to display this original task list and a random subset of 'daily tasks' via a web app. I want to provide an endpoint that responds with the task list data and write the code for this in NodeJS. I also want to create secondary endpoints that can sort the subset of tasks arbitrarily using Python.
   
 ### Getting Started / Project Overview
 
@@ -117,8 +117,8 @@ Feel free to open issues / pull requests or contact me with suggestions & improv
 
 ### Further Reading
 
-- [Setting up python virtual environments with non-default pip packages](http://jamesthom.as/blog/2017/04/27/python-packages-in-openwhisk/)
-- [Setting up javascript actions with non-default npm packages](http://jamesthom.as/blog/2016/11/28/npm-modules-in-openwhisk/)
+- [Setting up Python virtual environments with non-default pip packages](http://jamesthom.as/blog/2017/04/27/python-packages-in-openwhisk/)
+- [Setting up JavaScript actions with non-default npm packages](http://jamesthom.as/blog/2016/11/28/npm-modules-in-openwhisk/)
 - [Setting up an nginx proxy for OpenWhisk web applications](https://medium.com/openwhisk/semi-custom-domains-for-openwhisk-web-apps-1ef1bd5bc437)
-- [openwhisk-objectstore: One way to use objectstore to host static and deploy a stateless front-end, check the demo](https://github.com/starpit/openwhisk-objectstore)
+- [openwhisk-objectstore: One way to use Bluemix objectstore to host static and deploy a stateless front-end, check the demo](https://github.com/starpit/openwhisk-objectstore)
 - [Improving the performance of OpenWhisk applications](https://medium.com/openwhisk/squeezing-the-milliseconds-how-to-make-serverless-platforms-blazing-fast-aea0e9951bd0)
