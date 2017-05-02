@@ -21,7 +21,7 @@ Please feel free to use this project as a primer for an OpenWhisk web applicatio
 
 ### Preface
 
-Just to quickly gloss over what you've probably read in the docs, *serverless is not truly serverless*. The term meant to denote the existence of an API host that activates remote, 'dockerized' compute events per request. These events remain inactive outside of near real-time usage so rely on a persistence layer for the state machine when required. OpenWhisk uses a swagger esque syntax for managing routes/CORS that you can read about [here](https://github.com/openwhisk/openwhisk/blob/master/docs/reference.md#rest-api). This layer of abstraction makes it easy for the developer(s) to assemble a centralized web API relying on *n* number of supporting environments with very little technical overhead outside their language(s) of choice. 
+Just to quickly gloss over what you've probably read in the docs, *serverless is not truly serverless*. The term denotes the existence of an API host that activates remote, 'dockerized' compute events per request. These events remain inactive outside of near real-time usage so rely on a persistence layer for the state machine when required. The gist here is that abstraction via the cli diminishes a lot of dev ops related work and makes it easy for the developer(s) to assemble a centralized web API relying on *n* number of supporting environments. As a note, swagger esque syntax is used for managing routes/CORS that you can read about in more detail [here](https://github.com/openwhisk/openwhisk/blob/master/docs/reference.md#rest-api).
 
 If you are wondering why there is a NodeJS/Express server and CF app deployment in this repo, this is only intended to serve static content. Setting up a serverless front-end is very do-able but to I wanted to keep this tutorial centered around how to cobble together back end assets. Some considerations being:
 
@@ -105,7 +105,7 @@ Run `./event_config.sh` to create all events. To test our new sequence, run `wsk
 }
 ```
 
-If you are error free :clap:, return to the root directory and run `./setup.sh 'local | cloud'` to update the endpoints file and UI assets. Open the endpoints file and copy the url for sequences/getTasksAZ and run `curl url` to confirm the results.
+If you are error free :clap:, return to the root directory and run `./setup.sh 'local | cloud'` to re-deploy the application. While you build, try copying the url for sequences/getTasksAZ and run `curl 'endpoint_url'` to confirm the http response data is aligned with the output above. 
 
 It should be clear from looking at `root/public/index.js` how to use the endpoints file with AJAX style requests if you're used to front-end development. I suggest implementing some functionality that uses the getTasksAZ sequence if the pieces don't click there. Since this is not a front-end focused tutorial I don't plan to expand any further on the topic. Feel free to replace whatever you want in public or completely get rid of the directory / UI deployment code in `./setup.sh` if you are just looking to create web hooks. 
 
