@@ -1,15 +1,10 @@
-<!doctype html>
-<html lang="en" ng-app="demo">
+<!DOCTYPE html>
+<html lang="en" ng-cloak>
 	<head>
 		<meta charset="utf-8">
 		<title>OpenWhisk Bluemix Tutorial</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://dal.objectstorage.open.softlayer.com/v1/AUTH_f19aedb29fcf43a8a88f1ff36b3cc25e/static/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
- 		<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 	</head>
 
 	<body ng-controller="ctrl as ctrl">
@@ -27,7 +22,7 @@
 				</md-button>
 
 				<md-button class="md-raised" aria-label="Daily Tasks (Sorted)" ng-click="ctrl.setDailyTasksSorted()">
-					Todays Tasks (Sorted)
+					Random Tasks By Length
 				</md-button>
 			</div>
 		</md-toolbar>
@@ -52,6 +47,11 @@
 			{{ctrl.model.err}}
 		</div>
 
-		<script src="index.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+ 		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+		<script type="application/javascript" src="https://dal.objectstorage.open.softlayer.com/v1/AUTH_f19aedb29fcf43a8a88f1ff36b3cc25e/static/index.js"></script>
 	</body>
 </html>
